@@ -1,0 +1,266 @@
+/* 🌟 Full Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2193b0, #6dd5ed); /* 💙 Smooth Blue Gradient */
+  color: #fff;
+}
+
+/* 🌟 Container Layout */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 80px; /* Space for navbar */
+}
+
+/* 🔹 Navigation Bar (Fixed Top) */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(26, 26, 46, 0.9); /* 🖤 Dark Transparent */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 🔹 Navigation Links */
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks button {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.navLinks button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* 🔹 Logout Button */
+.logoutBtn {
+  background: #ff4b2b;
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logoutBtn:hover {
+  background: #ff2e63;
+}
+
+/* 🌟 Main Content Box */
+.content {
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content:hover {
+  transform: scale(1.02);
+}
+
+/* 🌟 Home Section */
+.homeSection h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.homeSection p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.xssTypes {
+  list-style: none;
+  padding: 0;
+}
+
+.xssTypes li {
+  background: #eef5f9;
+  color: #222;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* 🔥 XSS Payload Box */
+.payloadList {
+  background: #222;
+  color: #ffcc00;
+  font-family: monospace;
+  padding: 15px;
+  border-radius: 8px;
+  overflow: auto;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.codeSnippet {
+  background: #222;
+  color: #ffcc00;
+  font-family: monospace;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* 💥 Stored XSS Section */
+.storedXssSection {
+  text-align: center;
+}
+
+.commentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.inputField,
+.textareaField {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus,
+.textareaField:focus {
+  border-color: #ff416c;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 65, 108, 0.3);
+}
+
+/* 🚀 Post Button */
+.postBtn {
+  background: #ff416c;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.postBtn:hover {
+  background: #ff2e63;
+}
+
+/* 📝 Comments Section */
+.commentsContainer {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.commentBox {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-left: 4px solid #2193b0;
+  word-wrap: break-word;
+}
+
+.commentUsername {
+  font-weight: bold;
+  color: #222;
+}
+
+.commentText {
+  margin-left: 5px;
+  color: #444;
+}
+
+/* 🛡️ Mitigation Section */
+.mitigationSection h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.mitigationList {
+  padding-left: 20px;
+}
+
+.mitigationList li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* 🌍 Responsive Adjustments */
+@media (max-width: 768px) {
+  .content {
+    width: 95%;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+
+  .inputField,
+  .textareaField {
+    width: 90%;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+}

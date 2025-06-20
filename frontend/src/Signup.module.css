@@ -1,0 +1,99 @@
+/* 🌟 Overall Signup Page Styling */
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient Background */
+}
+
+/* 🔹 Signup Box Styling */
+.signupBox {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.signupBox:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+}
+
+/* 🔹 Heading */
+.signupBox h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Input Field Wrapper */
+.inputGroup {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Labels */
+.inputGroup label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* 🔹 Input Fields */
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* 🟢 Input Field Focus Effect */
+.inputGroup input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* 🔹 Signup Button */
+.signupButton {
+  width: 100%;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🟢 Button Hover Effect */
+.signupButton:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+
+/* 🔹 Login Link */
+.loginLink {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.loginLink a {
+  color: #6a11cb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.loginLink a:hover {
+  color: #2575fc;
+}
