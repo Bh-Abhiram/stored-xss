@@ -1,5 +1,5 @@
 
-# 💥 Stored XSS Attack Simulation — Breach Blocker Space
+# 💥 Stored XSS Attack Simulation
 
 This project demonstrates a **Stored Cross-Site Scripting (XSS)** attack using a vulnerable comment system. It shows how attackers can inject fake components like login forms, offer buttons, and banners to steal user credentials, simulating a real-world phishing attack in a safe, local environment.
 
