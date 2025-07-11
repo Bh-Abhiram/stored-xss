@@ -23,12 +23,12 @@ Follow the below steps to setup new user for above stored_xss database
 
 STEP:1 : Create the new user
 
-CREATE USER 'XSSDEMO'@'localhost'
-IDENTIFIED BY 'XSSAttack';
+CREATE USER 'new_user_name'@'localhost'
+IDENTIFIED BY 'new_password';
 
 STEP:2 : Grant all privileges to above user and database
 
-GRANT ALL PRIVILEGES on stored_xss.* TO 'XSSDEMO'@'locahost';
+GRANT ALL PRIVILEGES on stored_xss.* TO 'new_user_name'@'locahost';
 
 STEP:3 : Check whether the user is created or not on particular database
 
