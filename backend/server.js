@@ -10,14 +10,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const SECRET_KEY = "XSS_SECRET"; // Secret key for JWT
+const SECRET_KEY = "your_secret_key"; // Secret key for JWT
 
 // Database Connection
 const db = mysql.createConnection({
     host: "localhost",
-    user: "XSSDEMO",
-    password: "XSSAttack", // Add your MySQL password here
-    database: "stored_xss",
+    user: "your_mysql_username",
+    password: "your_user_password", // Add your MySQL password here
+    database: "your_database_name",
 });
 
 db.connect((err) => {
